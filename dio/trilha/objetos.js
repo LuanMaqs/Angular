@@ -1,5 +1,5 @@
 
-/*class Pessoa {
+class Pessoa {
     nome;
     idade;
     anoDeNascimento;
@@ -67,7 +67,7 @@ class carro {
  }
 
  const i8 = new carro('BMW', 'azul', 1/5);
- console.log(i8.calcularGasto(70,4));*/
+ console.log(i8.calcularGasto(70,4));
 
 
 
