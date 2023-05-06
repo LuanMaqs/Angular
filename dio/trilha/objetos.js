@@ -1,5 +1,5 @@
 
-class Pessoa {
+/*class Pessoa {
     nome;
     idade;
     anoDeNascimento;
@@ -67,7 +67,7 @@ class carro {
  }
 
  const i8 = new carro('BMW', 'azul', 1/5);
- console.log(i8.calcularGasto(70,4));
+ console.log(i8.calcularGasto(70,4));*/
 
 
 
@@ -88,10 +88,27 @@ class carro {
     calcularIMC(){
         return this.peso / (this.altura * this.altura);
     }
+
+    classificarIMC() {
+        const imc = this.calcularIMC();
+        if (imc < 18.5) {
+            return ('Abaixo')
+        } else if (imc >= 18.5 && imc <= 25) {
+            return ('normal')
+        } else if (imc >= 25 && imc <= 30) {
+            return ('Acima do peso');
+        } else if (imc >= 30 && imc <= 40) {
+            return ('Obeso');
+        } else if (imc > 40) {
+            return ('Obesidade Grave');
+        }
+    }
  }
 
  const Luan = new pessoa ('Luan', '60', '1.78');
- console.log(Luan.calcularIMC())
+ console.log(Luan.classificarIMC());
+ 
+
 
     
 
