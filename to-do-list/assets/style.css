@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 100px;
+    margin: 10px 0 0;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+
+}
+
+input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: cornflowerblue;
+}
+
+       
+
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .middle {
+        text-align: center;
+    }
+
+    .task {
+        margin-bottom: 10px;
+    }
+
+    .task button {
+        margin-left: 10px;
+    }
